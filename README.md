@@ -1,5 +1,5 @@
 # jackson-dataformat-toml
-jackson dataformat for toml. The reader is based on (tomlj)[https://github.com/tomlj/tomlj] and the writer is based on javascript toml parser (@iarna/toml)[https://www.npmjs.com/package/@iarna/toml].  
+jackson dataformat for toml. The reader is based on [tomlj(https://github.com/tomlj/tomlj) and the writer is based on javascript toml parser [@iarna/toml](https://www.npmjs.com/package/@iarna/toml).  
 
 ## Get it!
 # Maven
