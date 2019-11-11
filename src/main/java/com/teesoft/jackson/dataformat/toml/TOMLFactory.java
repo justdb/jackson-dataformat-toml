@@ -16,6 +16,7 @@
 package com.teesoft.jackson.dataformat.toml;
 
 import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.core.format.InputAccessor;
 import com.fasterxml.jackson.core.format.MatchStrength;
 import com.fasterxml.jackson.databind.MappingJsonFactory;
@@ -45,7 +46,10 @@ public class TOMLFactory extends MappingJsonFactory {
     public MatchStrength hasFormat(InputAccessor acc) throws IOException {
         return super.hasFormat(acc); //To change body of generated methods, choose Tools | Templates.
     }
-
+    @Override
+    public Version version() {
+        return PackageVersion.VERSION;
+    }
     @Override
     public String getFormatName() {
         return TOMLFormatSchema.TOML;

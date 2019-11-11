@@ -16,6 +16,7 @@
 package com.teesoft.jackson.dataformat.toml;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
@@ -72,6 +73,11 @@ public class TOMLMapperTest
         MyValue valueFile = mapper.readValue(new File("target/test.toml"), MyValue.class);
         String toml3 = mapper.writeValueAsString(valueFile);
         assertEquals(toml, toml3);
+        JsonNode jsonNode = mapper.readTree(toml);
+        String toml4 = mapper.writeValueAsString(jsonNode);
+        MyValue valueNew4 = mapper.readValue(toml4, MyValue.class);
+        String toml5 = mapper.writeValueAsString(valueNew4);
+        assertEquals(toml, toml5);
 
     }
 
