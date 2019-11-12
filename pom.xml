@@ -3,7 +3,7 @@
     <groupId>com.teesoft</groupId>
     <artifactId>jackson-dataformat-toml</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <name>jackson dataformat toml</name>
     <parent>
         <groupId>com.fasterxml.jackson</groupId>
@@ -45,7 +45,7 @@
         <connection>scm:git:git@github.com:justdb/jackson-dataformat-toml.git</connection>
         <developerConnection>scm:git:git@github.com:justdb/jackson-dataformat-toml.git</developerConnection>
         <url>https://github.com/justdb/jackson-dataformat-toml</url>    
-        <tag>jackson-dataformat-toml-1.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <issueManagement>
         <url>https://github.com/justdb/jackson-dataformat-toml/issues</url>
