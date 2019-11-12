@@ -3,7 +3,7 @@
     <groupId>com.teesoft</groupId>
     <artifactId>jackson-dataformat-toml</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>jackson dataformat toml</name>
     <parent>
         <groupId>com.fasterxml.jackson</groupId>
