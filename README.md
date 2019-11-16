@@ -1,15 +1,18 @@
 # jackson-dataformat-toml
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml?ref=badge_shield)
 
 jackson dataformat for toml. The reader is based on [tomlj](https://github.com/tomlj/tomlj) and the writer is based on javascript toml parser [@iarna/toml](https://www.npmjs.com/package/@iarna/toml).  
 
 ** TOML 0.5.0 **
 
-## Get it!
-# Maven
+## Get it
+
+## Maven
 
 Functionality of this package can be used using following Maven dependency:
-```
+
+```xml
 <dependencies>
   ...
   <dependency>
@@ -21,9 +24,11 @@ Functionality of this package can be used using following Maven dependency:
 </dependencies>
 ```
 
-## Use it!
+## Use it
+
 With simple 2-property POJO like this:
-```
+
+```java
 // Note: can use getters/setters as well; here we just use public fields directly:
 public class MyValue {
   public String name;
@@ -31,7 +36,8 @@ public class MyValue {
   // NOTE: if using getters/setters, can keep fields `protected` or `private`
 }
 ```
-```
+
+```java
 TOMLMapper mapper = new TOMLMapper();
 MyValue value = new MyValue();
 value.name = "justdb";
@@ -41,6 +47,6 @@ mapper.writeValue(new File("target/test.toml"), value);
 MyValue valueNew = mapper.readValue(toml, MyValue.class);
 ```
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml?ref=badge_large)

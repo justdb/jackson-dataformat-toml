@@ -22,11 +22,11 @@ import com.fasterxml.jackson.core.FormatSchema;
  * @author Wind Li
  */
 public class TOMLFormatSchema implements FormatSchema{
+    public static final String TOML = "TOML";
 
     @Override
     public String getSchemaType() {
         return TOML;
     }
-    public static final String TOML = "TOML";
     
 }

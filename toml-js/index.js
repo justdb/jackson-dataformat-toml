@@ -9,7 +9,7 @@ function jsonToToml(json){
     return TOML.stringify(obj);
 }
 
-module.exports= {tomlToJson : tomlToJson,jsonToToml : jsonToToml};
+module.exports= {tomlToJson,jsonToToml};
 
 if (typeof GLOBAL != "undefined") {
   GLOBAL.tomlToJson = tomlToJson;
