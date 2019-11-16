@@ -1,4 +1,6 @@
 # jackson-dataformat-toml
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml?ref=badge_shield)
+
 jackson dataformat for toml. The reader is based on [tomlj](https://github.com/tomlj/tomlj) and the writer is based on javascript toml parser [@iarna/toml](https://www.npmjs.com/package/@iarna/toml).  
 
 ** TOML 0.5.0 **
@@ -38,3 +40,7 @@ String toml = mapper.writeValueAsString(value);
 mapper.writeValue(new File("target/test.toml"), value);
 MyValue valueNew = mapper.readValue(toml, MyValue.class);
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjustdb%2Fjackson-dataformat-toml?ref=badge_large)
